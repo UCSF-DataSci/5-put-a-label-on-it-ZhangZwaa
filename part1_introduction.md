@@ -36,10 +36,14 @@ def load_data(file_path):
     Returns:
         DataFrame containing the data
     """
-    # YOUR CODE HERE
     # Load the CSV file using pandas
+    try:
+        data = pd.read_csv(file_path)
+    except FileNotFoundError:
+        print("File not exist!")
+        data = pd.DataFrame()
     
-    return pd.DataFrame()  # Replace with actual implementation
+    return data
 ```
 
 ## 3. Data Preparation

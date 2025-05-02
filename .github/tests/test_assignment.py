@@ -50,7 +50,7 @@ def load_notebook_functions(notebook_path):
                 functions[name] = obj
 
     # Debug: Print loaded functions
-    # print(f"Functions loaded from {notebook_path}: {list(functions.keys())}")
+    print(f"Functions loaded from {notebook_path}: {list(functions.keys())}")
     return functions
 
 # --- Test Fixtures ---
