@@ -73,11 +73,12 @@ def run_notebooks_once(request):
     print("\n--- Running Pre-Test Setup ---")
     data_path = Path("data/synthetic_health_data.csv")
     generate_script = "generate_data.py"
-    notebooks_to_run = [
-        'part1_introduction.ipynb',
-        'part2_feature_engineering.ipynb',
-        'part3_data_preparation.ipynb'
-    ]
+    # notebooks_to_run = [
+    #     'part1_introduction.ipynb',
+    #     'part2_feature_engineering.ipynb',
+    #     'part3_data_preparation.ipynb'
+    # ]
+    notebooks_to_run = 'part1_introduction.ipynb'
 
     # 1. Generate data if it doesn't exist
     if not data_path.is_file():
